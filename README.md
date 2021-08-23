@@ -6,6 +6,7 @@ This repository attempts to integrate the GAP kernel with Deepnote as a Jupyter 
 - After a few moments, the Dockerfile will open up in the editor on the right-hand side. You may come across an error saying "This project is not currently using an environment defined by this Dockerfile". If that is the case, simply click the "Build" button on the top right, until the Dockerfile is built (or it uses a cached environment from a previous build). You may be prompted to restart the hardware, which can be done by clicking the link in the error message.
 - Finally, under the "Initialization" heading on the left panel, open "init.ipynb" by clicking on it.
 - Copy the contents of `init.ipynb` in the repository into the editor panel, and click the "Run Notebook" button on the top right to finalize the environment changes. If you cannot see the `init.ipynb` notebook in the repository for any reason, you just need to append the following two lines to the Deepnote initialization script:
+
         sudo ln -f $GAP_HOME/bin/gap.sh /usr/bin/gap
         sudo ln -f $GAP_HOME/pkg/JupyterKernel/bin/jupyter-kernel-gap /usr/bin/jupyter-kernel-gap
 
