@@ -46,6 +46,10 @@ RUN    cd /usr/lib \
     && python3 setup.py install --user
 
 ENV GAP_HOME="/usr/lib/gap-${GAP_VERSION}"
+
+RUN    ln -f $GAP_HOME/bin/gap.sh /usr/bin/gap \
+    && ln -f $GAP_HOME/pkg/JupyterKernel/bin/jupyter-kernel-gap /usr/bin/jupyter-kernel-gap
+
 ENV JUPYTER_KERNEL_BIN="${GAP_HOME}/pkg/JupyterKernel/bin"
 ENV GAP_BIN="${GAP_HOME}/bin"
 ENV PATH="${GAP_HOME}/bin:${GAP_HOME}/pkg/JupyterKernel/bin:${PATH}"
