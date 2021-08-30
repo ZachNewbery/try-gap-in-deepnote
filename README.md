@@ -1,4 +1,4 @@
-- Latest official GAP release (GAP 4.11.1) [<img src="https://deepnote.com/buttons/launch-in-deepnote-white-small.svg">](https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FZachNewbery%2Ftry-gap-in-deepnote)
+- Latest official GAP release (GAP 4.11.1) [<img src="https://deepnote.com/buttons/launch-in-deepnote-white-small.svg">](https://deepnote.com/project/GAP-Kernel-6I_gbA2oTJeS-h3UCNbvRQ)
 # Deepnote
 [Deepnote](https://deepnote.com/) is a web-based data science notebook that is Jupyter-compatible. It allows for real-time collaboration helping to bring teams and projects together. No installation is required, and can be used on any OS that has a browser. All notebooks on Deepnote are run on machines in the cloud, which can be customised to the needs of each project (with some features gated behind a subscription). To find out more, access the [docs](https://docs.deepnote.com).
 
