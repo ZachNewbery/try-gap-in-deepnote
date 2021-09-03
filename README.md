@@ -18,7 +18,7 @@ More information available here: [Image Repo](https://github.com/gap-system/gap-
 This repository attempts to integrate the GAP kernel with Deepnote as a Jupyter Notebook. It does not require a local GAP installation, and can be accessed through the browser. To start a new GAP session, do the following:
 1. Click on the "Launch Deepnote" badge at the top of this read-me, which will take you to an existing project setup for you in Deepnote.
 2. To execute your own code, you can click the "Duplicate" button which will setup a new project for you to work with.
-3. To make sure that everythin is setup correctly, you can click the "Environment" tab on the left-hand side, and ensure it is set to "GAP".
+3. To make sure that everything is setup correctly, you can click the "Environment" tab on the left-hand side, and ensure it is set to "GAP".
 4. If not, select that option from the dropdown. The Dockerfile will then open up in the editor on the right-hand side. You may come across an error saying "This project is not currently using an environment defined by this Dockerfile". If that is the case, simply click the "Build" button on the top right, until the Dockerfile is built (or it uses a cached environment from a previous build). You may be prompted to restart the hardware, which can be done by clicking the link in the error message.
 
 To test the GAP kernel, simply create a new notebook in Deepnote by clicking on the "Notebooks & Files" tab on the left toolbar, and then the "+" button at the top right of the opened panel. Now, GAP commands can be directly written into the cells in the newly created notebook.
