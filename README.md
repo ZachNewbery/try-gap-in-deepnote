@@ -1,20 +1,31 @@
-- Latest official GAP release (GAP 4.11.1) [<img src="https://deepnote.com/buttons/launch-in-deepnote-white-small.svg">](https://deepnote.com/project/GAP-Kernel-6I_gbA2oTJeS-h3UCNbvRQ)
+# Deprecation Notice
+⚠️ ⚠️ ⚠️
 
-# Deepnote
+This Dockerfile project has been _deprecated_ in favour of a Docker image hosted on Github's container repository.
+
+It is highly recommended that you use that image instead for any GAP + Deepnote related projects.
+
+More information available here: [Image Repo](https://github.com/gap-system/gap-docker-deepnote)
+
+⚠️ ⚠️ ⚠️
+
+### Deepnote
 [Deepnote](https://deepnote.com/) is a web-based data science notebook that is Jupyter-compatible. It allows for real-time collaboration helping to bring teams and projects together. No installation is required, and can be used on any OS that has a browser. All notebooks on Deepnote are run on machines in the cloud, which can be customised to the needs of each project (with some features gated behind a subscription). To find out more, access the [docs](https://docs.deepnote.com).
 
-# GAP in Deepnote
+### GAP in Deepnote
+- Latest official GAP release (GAP 4.11.1) [<img src="https://deepnote.com/buttons/launch-in-deepnote-white-small.svg">](https://deepnote.com/project/GAP-Kernel-6I_gbA2oTJeS-h3UCNbvRQ)
+
 This repository attempts to integrate the GAP kernel with Deepnote as a Jupyter Notebook. It does not require a local GAP installation, and can be accessed through the browser. To start a new GAP session, do the following:
 1. Click on the "Launch Deepnote" badge at the top of this read-me, which will take you to an existing project setup for you in Deepnote.
 2. To execute your own code, you can click the "Duplicate" button which will setup a new project for you to work with.
-3. To make sure that everythin is setup correctly, you can click the "Environment" tab on the left-hand side, and ensure it is set to "GAP".
+3. To make sure that everything is setup correctly, you can click the "Environment" tab on the left-hand side, and ensure it is set to "GAP".
 4. If not, select that option from the dropdown. The Dockerfile will then open up in the editor on the right-hand side. You may come across an error saying "This project is not currently using an environment defined by this Dockerfile". If that is the case, simply click the "Build" button on the top right, until the Dockerfile is built (or it uses a cached environment from a previous build). You may be prompted to restart the hardware, which can be done by clicking the link in the error message.
 
 To test the GAP kernel, simply create a new notebook in Deepnote by clicking on the "Notebooks & Files" tab on the left toolbar, and then the "+" button at the top right of the opened panel. Now, GAP commands can be directly written into the cells in the newly created notebook.
 
 For further information about Jupyter, see https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/index.html.
 
-# Setting up your own GAP+Deepnote Project
+### Setting up your own GAP+Deepnote Project
 To get started with your own GAP projects in a new Deepnote project without duplicating the already set-up stuff, setup is rather simple:
 1. After creating a Deepnote account, create a new project from the dashboard, by clicking the blue "New Project" button.
 2. Clone this repository to get access to the Dockerfile. This can be done by opening a terminal (once the hardware has started up) via the "Terminal" option in the sidebar, clicking the "+" button, and running:
@@ -28,7 +39,7 @@ To get started with your own GAP projects in a new Deepnote project without dupl
 4. Follow steps 2-4 of [GAP in Deepnote](#gap-in-deepnote) to configure the project environment for usage.
 5. Now, Deepnote can be used with the GAP kernel for your own project. Feel free to delete the `try-gap-in-deepnote` folder in your project's workspace as it is no longer required.
 
-# Limitations
+### Limitations
 Due to the max 5GB Docker image size limit imposed by Deepnote, the provided Docker image only compiles a select number of GAP packages which are required by the JupyterKernel package. These packages are `io`,`crypting`, `json` & `ZeroMQInterface`. In order to install any other packages, you will need to do so manually. This can be done from the GAP installation directory:
 
     cd /usr/lib/gap-4.11.1
